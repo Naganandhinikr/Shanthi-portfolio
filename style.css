@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 .consul a span{
     margin-right: 40px;
     font-weight: 600;
@@ -74,6 +79,11 @@
 }
 .navbar-nav .nav-link:hover {
     color: #ffc107;
+}
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+      margin-left: 0px;
+    }
 }
 .btn-custom {
     background-color: #ffc107;
