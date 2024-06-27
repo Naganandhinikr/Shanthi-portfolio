@@ -56,7 +56,7 @@
 .navbar {
     background-color: #0b0c0e;
     padding: 1rem 2rem;
-    height: 65px;
+    height: auto;
 }
 .navbar-brand {
     font-size: 2.5rem;
@@ -175,11 +175,10 @@
 }
 .about {
     background-color: #f8f9fa;
-    padding: 50px 0;
+    padding: 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     margin: 50px 0;
-    padding: 15px;
 }
 .abtMe-content h1 {
     font-size: 3rem;
@@ -256,17 +255,23 @@
         transform: translateX(0);
     }
 }
+
+.ser-head{
+    font-size: 3rem;
+}
+
 .whomHelp {
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: #f8f9fa;
 }
 
 .WH-head {
+    font-size: 3rem;
     margin-bottom: 30px;
 }
 
 .WH-box {
-    background-color: #9fa4a5;
+    background-color: #181130c4;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 40px;
@@ -275,11 +280,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .WH-box:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: #242525;
 }
 
 .WH-box h4 {
@@ -303,7 +310,6 @@
 }
 
 .help-description{
-    text-align: justify;
     color: #6c757d;
     max-height: 0;
     overflow: hidden;
@@ -324,6 +330,11 @@
 .testimonial-section {
     padding: 50px 0;
 }
+
+.testimonial-section h1{
+    font-size: 3rem;
+}
+
 .carousel-item {
     text-align: center;
     position: relative;
@@ -359,10 +370,52 @@
 }
 
 .msg-me-title{
-    margin: 10px 0;
+    margin: 8px 0;
     padding: 5px 0;
 }
 
-.footer-msgUs{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),0 4px 9px rgba(0, 0, 0, 0.2);
+.mm-title{
+    font-size: 3rem;
 }
+
+.form-details{
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),0 4px 9px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #FFCA2C;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.social-media a:hover{
+    background-color: #FFCA2C;
+    color: rgb(5, 5, 5);
+}
+
+.social-media a:hover i{
+    color: black;
+}
+
+.list-unstyled i{
+    color: #FFCA2C;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+  
+.no-underline:hover {
+    text-decoration: underline;
+}
+

@@ -11,35 +11,81 @@
       font-family: Arial, sans-serif;
       scroll-behavior: smooth;
     }
+    .navbar {
+      background-color: #0b0c0e;
+      padding: 1rem 2rem;
+      /* height: 65px; */
+    }
+    .navbar-brand {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .text-grey{
+      color: #b7babb;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-right: 1rem;
+      transition: color 0.3s;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffc107;
+    }
+    .btn-custom {
+      background-color: #ffc107;
+      color: #343a40;
+      font-weight: bold;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      transition: background-color 0.3s, transform 0.3s ease-in-out;
+    }
+    .btn-custom:hover {
+      background-color: #ffca2c;
+      transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-custom {
+        width: 100%;
+        text-align: center;
+    }
+}
     .hero {
       background-color: #f8f9fa;
       padding: 50px 0;
+      margin-top: 100px;
       text-align: center;
       animation: fadeIn 2s ease-in;
     }
     .section {
-      padding: 80px 0;
+      padding: 30px 0;
       background-color: #ffffff;
-    }
-    .btn-custom {
-      background-color: #007bff;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 25px;
-      padding: 12px 30px;
-      transition: background-color 0.3s ease-in-out;
-    }
-    .btn-custom:hover {
-      background-color: #0056b3;
     }
     .service-item {
       margin-bottom: 30px;
-      border-left: 5px solid #007bff;
+      border-left: 5px solid #FFCA2C;
       padding-left: 15px;
       transition: transform 0.3s ease-in-out;
     }
     .service-item:hover {
       transform: translateX(10px);
+    }
+    .service-item:hover h3{
+      color: #ffca2c;
+      background-color: black;
+      padding: 2px;
+      border-radius: 10px;
     }
     .card {
       opacity: 0;
@@ -48,7 +94,8 @@
       transition: transform 0.3s ease-in-out;
     }
     .card:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
+      background-color: #dfdede;
     }
     .section h2, .section h3, .section p {
       opacity: 0;
@@ -73,27 +120,36 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">HR Consulting</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b><i><span class="text-warning">S</span><span class="text-grey">s</span></i></b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Services">Services</a>
+              <a class="nav-link" href="#About"><b>About</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Benefits">Benefits</a>
+              <a class="nav-link" href="#Services"><b>Services</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
+              <a class="nav-link" href="#Testimonials"><b>Testimonials</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact"><b>Contact</b></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom mt-2">Book a Consultation</a>
             </li>
           </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom">Book a Consultation</a>
         </div>
       </div>
     </nav>
@@ -101,15 +157,15 @@
 
   <section class="hero" id="Home">
     <div class="container">
-      <h1 class="display-4 animate__animated animate__fadeInDown">HR Consulting Services</h1>
+      <h1 class="display-4 animate__animated animate__fadeInDown"><b><span class="text-warning">HR</span> <span class="text-warning">C</span>onsulting <span class="text-warning">S</span>ervices</b></h1>
       <p class="lead animate__animated animate__fadeInUp">Specializing in helping startups and mid-sized companies optimize their HR operations.</p>
-      <a href="#Contact" class="btn btn-custom animate__animated animate__pulse animate__infinite">Contact to Learn More</a>
+      <a href="#Contact" class="btn btn-warning animate__animated animate__pulse animate__infinite">Contact to Learn More</a>
     </div>
   </section>
 
   <section class="section" id="Services">
     <div class="container">
-      <h2>What I Offer</h2>
+      <h1 class="text-center mb-5"><b><span class="text-warning">W</span>hat <span class="text-warning">I</span> <span class="text-warning">O</span>ffer</b></h1>
       <div class="row">
         <div class="col-md-6">
           <div class="service-item animate__animated animate__fadeInLeft">
@@ -153,7 +209,7 @@
 
   <section class="section bg-light" id="Benefits">
     <div class="container">
-      <h2 class="text-center mb-5 animate__animated animate__fadeInUp">Benefits of HR Consulting</h2>
+      <h1 class="text-center mb-5 animate__animated animate__fadeInUp"><span class="text-warning">B</span>enefits of <span class="text-warning">HR</span> <span class="text-warning">C</span>onsulting</h1>
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5 mb-4">
           <div class="card animate__animated animate__fadeInUp">
@@ -193,11 +249,19 @@
 
   <section class="section" id="Contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Ready to optimize your HR operations? Contact me to learn more about how I can help.</p>
-      <a href="#" class="btn btn-custom animate__animated animate__pulse animate__infinite">Contact</a>
+      <h2 class="text-center"><span class="text-warning">C</span>ontact</h2>
+      <p class="text-center">Ready to optimize your HR operations? Contact me to learn more about how I can help.</p>
+      <div class="d-flex justify-content-center">
+        <a href="https://survey.evvisolutions.com/hrformNew/" class="btn btn-warning animate__animated animate__pulse animate__infinite">Book a Consultation</a>
+      </div>
     </div>
   </section>
+
+  <footer class="text-center py-4">
+    <div class="container-fluid">
+      <p>&copy; 2024 Shanthi Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

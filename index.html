@@ -13,32 +13,37 @@
 </head>
 <body>
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a class="navbar-brand ms-5" href="#"><b><i><span class="text-warning">S</span><span class="text-grey">s</span></i></b></a>
-        <button class="navbar-toggler ms-5 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home"><b>Home</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About"><b>About</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Services"><b>Services</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact"><b>Contact</b> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Testimonials"><b>Testimonials</b></a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <a href="#" class="btn btn-custom">Book a Consultation</a>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b><i><span class="text-warning">S</span><span class="text-grey">s</span></i></b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About"><b>About</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Services"><b>Services</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Testimonials"><b>Testimonials</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact"><b>Contact</b></a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom mt-2">Book a Consultation</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+            <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom">Book a Consultation</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -103,8 +108,10 @@
       <div class="container">
         <div class="about">
           <div class="row">
-            <div class="col-sm-6"></div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-md-6">
+              <img src="img/shanthimam.jpg" alt="Shanthi Picture" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-md-6">
               <div class="abtMe d-flex flex-column">
                 <div class="abtMe-content">
                   <h1><span class="text-warning">A</span>bout <span class="text-warning">M</span>e</h1>
@@ -129,12 +136,12 @@
     <section id="Services">
       <div class="container">
         <div class="ser-head">
-          <h1 class="text-center m-5"><b>Services</b></h1>
+          <h1 class="text-center m-5"><b><span class="text-warning">S</span>erv<span class="text-warning">i</span>ces</b></h1>
         </div>
         <div class="row justify-content-center align-items-center">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card text-center m-2">
-              <img src="img/testi1.jpg" class="card-img-top" alt="...">
+              <img src="img/behav.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Behavioral Skills Training for Individuals and Companies</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
@@ -144,9 +151,9 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card text-center m-2">
-              <img src="img/testi1.jpg" class="card-img-top" alt="...">
+              <img src="img/HR.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title mb-4 mt-2">HR Consulting Services</h5>
+                <h5 class="card-title mb-2 mt-1">HR Consulting <br> Services</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                 <a href="service2.html" class="btn btn-warning mt-2">Learn More</a>
               </div>
@@ -154,7 +161,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card text-center m-2">
-              <img src="img/testi1.jpg" class="card-img-top" alt="...">
+              <img src="img/phcho.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title mb-1 mt-1">Psychometric Assessment & Counseling</h5>
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
@@ -206,78 +213,9 @@
          </div>
       </div>
     </section>
-    <section id="Contact" class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="footer-msgUs  p-4">
-              <div class="msg-me-title">
-                <h1 class="mm-title text-warning">Message Me</h1>
-                <div class="m-line"></div>
-              </div>
-              <div class="form-details">
-                <form action="">
-                  <div class="row">
-                    <div class="col-sm-6 mb-4 pb-2">
-                      <label class="form-label" for="name"><b>First Name <span class="text-danger">*</span></b></label>
-                      <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="First Name" required/>
-                    </div>
-                    <div class="col-sm-6 mb-4 pb-2">
-                      <label class="form-label" for="name"><b>Last Name <span class="text-danger">*</span></b></label>
-                      <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="Last Name" required/>
-                    </div>
-                    <div class="col-sm-6 mb-4 pb-2">
-                      <label class="form-label" for="name"><b>Email <span class="text-danger">*</span></b></label>
-                      <input type="email" name="name" id="name" class="form-control form-control-lg" placeholder="Email" required/>
-                    </div>
-                    <div class="col-sm-6 mb-4 pb-2">
-                      <label class="form-label" for="name"><b>Mobile Number <span class="text-danger">*</span></b></label>
-                      <input type="tel" name="name" id="name" class="form-control form-control-lg" placeholder="Contact Number" required/>
-                    </div>
-                    <div class="col-sm-12 mb-3">
-                      <label for="exampleFormControlTextarea1" class="form-label"><b>Message <span class="text-danger">*</span></b></label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required placeholder="What purpose"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-warning btn-lg mb-3">Submit</button>
-                    </div>
-                  
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-sm-12">
-            <div class="footer-getintouch">
-              <div class="getintouch-title">
-                <h2 class="get-title">Get in Touch</h2>
-                <div class="g-line"></div>
-              </div>
-              <div class="getintouch-details">
-                <p class="text-muted">I created a responsive portfolio using HTML, CSS, and JavaScript, with Bootstrap for styling. 
-                  I built a backend system for user enrollments using PHP and MySQL for secure data storage. 
-                  Focusing on clean code, I optimized performance and ensured cross-browser compatibility. 
-                  My portfolio adapts seamlessly to various viewport sizes, offering an optimal user experience across devices.
-                </p>
-                <div class="social">
-                  <span class="mb-3"><i class="bi bi-geo-alt me-3 text-primary"></i>Thiruparankundram,Madurai</span>
-                  <span class="mb-3"><i class="bi bi-phone me-3 text-primary"></i>+91-6374142462</span>
-                  <span ><i class="bi bi-envelope me-3 text-primary"></i>nandhinikr24@gmail.com</span>
-                </div>
-                <div class="social-media">
-                  <a href="#"><i class="bi bi-facebook"></i></a> 
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
     <section id="Testimonials">
       <div class="container testimonial-section">
-        <h1 class="text-center mb-4">Testimonials</h1>
+        <h1 class="text-center mb-4"><span class="text-warning">T</span>esti<span class="text-warning">m</span>onials</h1>
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -324,6 +262,87 @@
         </div>
     </div>
     </section>
+    <section id="Contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-msgUs  p-4">
+              <div class="msg-me-title">
+                <h1 class="mm-title text-center"><span class="text-warning">P</span>ing <span class="text-warning">M</span>e</h1>
+                <div class="m-line"></div>
+              </div>
+              <div class="form-details">
+                <form action="">
+                  <div class="row">
+                    <div class="col-sm-6 mb-4 pb-2">
+                      <label class="form-label" for="name"><b>First Name <span class="text-danger">*</span></b></label>
+                      <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="First Name" required/>
+                    </div>
+                    <div class="col-sm-6 mb-4 pb-2">
+                      <label class="form-label" for="name"><b>Last Name <span class="text-danger">*</span></b></label>
+                      <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="Last Name" required/>
+                    </div>
+                    <div class="col-sm-6 mb-4 pb-2">
+                      <label class="form-label" for="name"><b>Email <span class="text-danger">*</span></b></label>
+                      <input type="email" name="name" id="name" class="form-control form-control-lg" placeholder="Email" required/>
+                    </div>
+                    <div class="col-sm-6 mb-4 pb-2">
+                      <label class="form-label" for="name"><b>Mobile Number <span class="text-danger">*</span></b></label>
+                      <input type="tel" name="name" id="name" class="form-control form-control-lg" placeholder="Contact Number" required/>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label"><b>Message <span class="text-danger">*</span></b></label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required placeholder="What purpose"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white pt-4 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-warning">Contact Information</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-geo-alt me-2"></i>Bangalore , Karnataka</li>
+              <li><i class="bi bi-phone me-2"></i>+91-9900976464</li>
+              <li><i class="bi bi-envelope me-2"></i>enrich.evvi@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-warning">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#Home" class="text-white no-underline">Home</a> | <a href="#About" class="text-white no-underline">About</a></li>
+              <!-- <li><a href="#About" class="text-white no-underline">About</a></li> -->
+              <li><a href="#Services" class="text-white no-underline">Services</a> | <a href="#Testimonials" class="text-white no-underline">Testimonials</a></li>
+              <!-- <li><a href="#Testimonials" class="text-white no-underline">Testimonials</a></li> -->
+              <li><a href="#Contact" class="text-white no-underline">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-warning">Follow Me</h5>
+            <div class="social-media">
+              <a href="#" class="text-white me-3"><i class="bi bi-whatsapp"></i></a> 
+              <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col-12 text-center">
+            <p>&copy; <span class="text-warning">Evvi Solutions Pvt Ltd,</span>  All Rights Reserved .2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
 
 
     

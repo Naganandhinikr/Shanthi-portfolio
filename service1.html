@@ -11,9 +11,60 @@
       scroll-behavior: smooth;
       text-align: justify;
     }
+    .navbar {
+    background-color: #0b0c0e;
+    padding: 1rem 2rem;
+    /* height: 65px; */
+}
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.text-grey{
+    color: #b7babb;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+.btn-custom {
+    background-color: #ffc107;
+    color: #343a40;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+.btn-custom:hover {
+    background-color: #ffca2c;
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-custom {
+        width: 100%;
+        text-align: center;
+    }
+}
     .hero {
       background-color: #f8f9fa;
       padding: 50px 0;
+      margin-top: 100px;
       text-align: center;
       animation: fadeIn 2s ease-in;
     }
@@ -21,18 +72,8 @@
       padding: 20px 0;
     }
     .container{
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-    }
-
-    .btn-custom {
-      background-color: #ffc107;
-      color: #000;
-      font-weight: bold;
-      transition: background-color 0.3s ease-in-out;
-    }
-    .btn-custom:hover {
-      background-color: #e0a800;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
     }
     .card {
       opacity: 0;
@@ -42,6 +83,20 @@
     }
     .card:hover {
       transform: scale(1.05);
+    }
+
+    .card-body{
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-body:hover{
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+      /* background-color: #dfdede; */
+    }
+
+    .card-body:hover .card-title{
+      color: #ffca2c;
     }
 
     .card:nth-child(1) { animation-delay: 0.3s; }
@@ -97,46 +152,54 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand ms-5" href="#">Behavioral Skills Training</a>
-        <button class="navbar-toggler me-5 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b><i><span class="text-warning">S</span><span class="text-grey">s</span></i></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Training">Training</a>
+              <a class="nav-link" href="#About"><b>About</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Methodology">Methodology</a>
+              <a class="nav-link" href="#Services"><b>Services</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Benefits">Benefits</a>
+              <a class="nav-link" href="#Testimonials"><b>Testimonials</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
+              <a class="nav-link" href="#Contact"><b>Contact</b></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom mt-2">Book a Consultation</a>
             </li>
           </ul>
         </div>
+        <div class="d-none d-lg-block">
+          <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom">Book a Consultation</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <section class="hero" id="Home">
     <div class="container">
-      <h1>Behavioral Skills Training for Individuals and Companies</h1>
+      <h1><span class="text-warning">B</span>ehavioral <span class="text-warning">S</span>kills <span class="text-warning">T</span>raining <span class="text-warning">f</span>or <span class="text-warning">I</span>ndividuals and <span class="text-warning">C</span>ompanies</h1>
       <p>Transform your professional and personal life with targeted behavioral skills training. I offer comprehensive programs to help individuals and companies enhance their effectiveness through improved behavior.</p>
-      <a href="#Contact" class="btn btn-custom animate__animated animate__pulse animate__infinite">Contact me to learn more or Book a Consultation</a>
+      <a href="#Contact" class="btn btn-custom animate__animated animate__pulse animate__infinite">Contact me to learn more</a>
     </div>
   </section>
 
   <section class="section" id="Training">
     <div class="container">
-      <h2>Behavioral Skills</h2>
+      <h2 class="text-center"><span class="text-warning">B</span>ehavioral <span class="text-warning">S</span>kills</h2>
       <p>Behavioral skills are the abilities that influence how we interact with others and navigate our environment. They encompass a range of competencies including communication, problem-solving, time management, and emotional intelligence.</p>
-      <h3 class="my-4">Key Behavioral Skills - Training Offered:</h3>
+      <h3 class="my-4 text-center"><span class="text-warning">K</span>ey <span class="text-warning">B</span>ehavioral <span class="text-warning">S</span>kills - <span class="text-warning">T</span>raining <span class="text-warning">O</span>ffered:</h3>
       <div class="row">
         <div class="col-md-4">
           <div class="card">
@@ -224,7 +287,7 @@
 
   <section class="methodology-section" id="Methodology">
     <div class="container">
-      <h2>Methodology for Training Behavioral Skills</h2>
+      <h2><span class="text-warning">M</span>ethodology <span class="text-warning">f</span>or <span class="text-warning">T</span>raining <span class="text-warning">B</span>ehavioral <span class="text-warning">S</span>kills</h2>
       <div class="methodology-item">
         <b>Experiential Learning:</b> Involves learning through experience, hands-on activities, and reflection to develop practical skills.
       </div>
@@ -245,24 +308,26 @@
 
   <section class="section" id="Benefits">
     <div class="container">
-      <h2>Benefits of Behavioral Skills Training</h2>
+      <h2 class="text-center"><span class="text-warning">B</span>enefits of <span class="text-warning">B</span>ehavioral <span class="text-warning">S</span>kills <span class="text-warning">T</span>raining</h2>
       <p>Investing in behavioral skills training leads to improved interpersonal relationships, enhanced leadership capabilities, and increased overall productivity. It equips individuals with the tools to navigate complex social interactions, resolve conflicts effectively, and maintain a positive work environment. This training fosters personal growth and professional excellence, paving the way for lasting success.</p>
     </div>
   </section>
 
   <section class="section bg-light" id="Contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>If you're interested in learning more about our training programs or booking a consultation, please contact us.</p>
-      <a href="#Contact" class="btn btn-custom animate__animated animate__pulse animate__infinite">Contact me to learn more or Book a Consultation</a>
+      <h2 class="text-center"><span class="text-warning">C</span>ontact</h2>
+      <p class="text-center">If you're interested in learning more about our training programs or booking a consultation, please contact us.</p>
+      <div class="d-flex justify-content-center">
+        <a href="https://survey.evvisolutions.com/webinar/" class="btn btn-custom animate__animated animate__pulse animate__infinite">Book a Consultation</a>
+      </div>
     </div>
   </section>
 
-  <!-- <footer class="text-center py-4">
-    <div class="container">
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+  <footer class="text-center py-4">
+    <div class="container-fluid">
+      <p>&copy; 2024 Shanthi Portfolio. All rights reserved.</p>
     </div>
-  </footer> -->
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
