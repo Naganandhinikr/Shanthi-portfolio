@@ -308,10 +308,11 @@ html{
     color: black;
   }
 
-  .certi-content h4{
+  .certi-content h5{
     background-color: #ffc107;
     padding: 10px;
     border-radius: 10px;
+    font-size: 22px;
   }
   
   .certi-box:hover .certi-content {
