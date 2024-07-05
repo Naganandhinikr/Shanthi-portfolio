@@ -7,65 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="shortcut icon" type="img" href="img/ss_fav.png">
 </head>
 <body>
     <header>
-      <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#"><b><img src="img/s logo.png" alt="" height="50" width="50"></b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home"><b>Home</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#About"><b>About</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Services"><b>Services</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Testimonials"><b>Testimonials</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Contact"><b>Contact</b></a>
-              </li>
-              <li class="nav-item d-lg-none">
-                <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom mt-2">Book a Consultation</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-none d-lg-block">
-            <a href="https://survey.evvisolutions.com/pform/" class="btn btn-custom">Book a Consultation</a>
-          </div>
-        </div>
-      </nav> -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#"><img src="img/SN1.png" alt="Logo" height="50" width="150"></a>
+          <a class="navbar-brand" href="#"><img src="img/logof1.png" alt="Logo" height="" width=""></a>
           <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home"><b>Home</b></a>
+                <a class="nav-link active link-warning" aria-current="page" href="#Home"><b>Home</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#About"><b>About</b></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#whomHelp"><b>Whom I Help</b></a>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <b>My Services</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="service1.html"><b>Behavioral Skills Trainer</b></a>
+                  <a class="dropdown-item" href="service2.html"><b>Psychometric Counsellor</b></a>
+                  <a class="dropdown-item" href="service3.html"><b>HR Consultant</b></a>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Testimonials"><b>Newsletter</b></a>
+                <a class="nav-link" href="#Newsletter"><b>Newsletter</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Contact"><b>Contact</b></a>
@@ -93,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="Services">
       <div class="container">
           <div class="row">
               <div class="col-md-4">
@@ -124,7 +98,7 @@
                           <h2 class="content-title">Psychometric Counsellor</h2>
                           <div class="service-des">
                             <p>Utilize psychometric assessments to gain insights into personality, abilities, and career preferences for better decision-making.
-                              <a href="service2.html" class="btn btn-warning mt-4 mx-5 mb-1">Learn More</a>
+                              <a href="service3.html" class="btn btn-warning mt-4 mx-5 mb-1">Learn More</a>
                             </p>
                           </div>
                       </div>
@@ -141,7 +115,7 @@
                           <h2 class="content-title">HR Consultant</h2>
                           <div class="service-des">
                             <p>Optimize your HR operations with expert consulting services to streamline processes and improve efficiency.
-                              <a href="service3.html" class="btn btn-warning mt-4 mx-4 mb-1">Learn More</a>
+                              <a href="service2.html" class="btn btn-warning mt-4 mx-4 mb-1">Learn More</a>
                             </p>
                           </div>
                       </div>
@@ -161,18 +135,17 @@
                 <div class="abtMe d-flex flex-column">
                   <div class="abtMe-content">
                     <h1><span class="text-warning">A</span>bout <span class="text-warning">M</span>e</h1>
-                    <br>
+                    <!-- <br>
                     <h3 class="my-2">Be Addicted to Bettering Yourself</h3>
-                    <br>
+                    <br> -->
                     <p class="text-muted my-2">"I believe in the adage that 'The path that brought me here has served its purpose, but now it's time to blaze a new trail for the future I envision.'”</p>
-                    <br>
-                    <p class="my-3">With over a decade of experience as an HR professional, I am now enthusiastically venturing into the world of a trainer to explore fresh opportunities. My journey is driven by continuous learning, as I aspire to empower individuals through transformative behavioral coaching.</p>
+                    <p class="my-3">With over two decades of professional experience spanning HR, operations, and training roles, my passion lies in the transformative power of behavioral skills. I focus on helping individuals master these essential skills to achieve lasting success</p>
+                    <p class="text-muted my-2">My recent explorations into psychometry have enriched my ability to understand individuals at a deeper, personality level. By offering psychometric assessments and counseling, I am dedicated to talent nurturing and development, empowering individuals to reach their full potential</p>
+                    <p class="my-3">Join me on this journey of self-discovery and transformation. Together, we can pave the way to realizing your goals and achieving the success you deserve</p>
                   </div>
                   <br>
                   <div class="know-more align-self-end">
-                    <a href="slider_img.html">
-                      <button class="btn btn-warning">Know more</button>
-                    </a>
+                    <a href="shanthi_profile/Shanthi - Corporate Trainer.pdf" class=" btn btn-warning">Know more</a>
                   </div>
                 </div>
               </div>
@@ -180,7 +153,7 @@
           </div>
         </div>
       </section>
-      <section id="whomHelp">
+      <section id="whomHelp" name="whomHelp">
         <div class="whomHelp">
           <div class="container">
             <div class="row">
@@ -190,7 +163,23 @@
                 </div>
                 <div class="WH-content">
                   <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                      <div class="WH-box">
+                        <h4 class="help-heading mt-3">For Individuals</h4>
+                        <p class="help-description"><span>Fresher Graduates <span class="text-warning">|</span> First-time Managers <span class="text-warning">|</span> Mid-career Professionals <span class="text-warning">|</span> Mindfulness Seekers</span>. 
+                          <br>I provide result-oriented behavioral skills training for lasting success. I also offer psychometric assessments and counseling to help you understand your personality deeply, make informed career decisions, and develop essential skills 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="WH-box">
+                        <h4 class="help-heading mt-3">For Businesses</h4>
+                        <p class="help-description">I offer comprehensive HR consulting services and corporate soft skills training for professionals at all levels. Whether you need to onboard freshers or develop your managers, my tailored training programs ensure your team thrives. I provide psychometric assessments and counseling to enhance employee development and organizational success</p>
+                      </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <!-- <div class="col-md-3">
                       <div class="WH-box">
                         <h4 class="help-heading mt-3">Mid-Professionals</h4>
                         <p class="help-description">Empowering them with enhanced behavioral skills for career advancement. </p>
@@ -213,14 +202,14 @@
                         <h4 class="help-heading mt-3">Mindfulness Seekers</h4>
                         <p class="help-description">Enhancing self-awareness, empathy and social skills, while providing practical techniques to reduce stress, improve focus and promote overall well-being</p>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
             </div>
            </div>
         </div>
-      </section>
+    </section>
       <!-- <section id="Services" name="Services">
       <div class="container">
         <div class="ser-head">
@@ -260,76 +249,88 @@
         </div>
       </div>
     </section> -->
-    <section class="certification">
+    <section class="certification" name="certification">
       <div class="container">
         <div class="certificate-head">
-          <h1 class="text-center my-5"><b>Certifications</b></h1>
+          <h1 class="text-center my-5"><b><span class="text-warning">C</span>ertifications</b></h1>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="certi-box">
-              <div class="certi-img">
-                <img src="Shanthi-Certifications/Shanthi_Master Trainer Certificate.jpg" alt="Sample Image">
-              </div>
-              <div class="certi-content">
-                <h5>Certified Master Trainer</h5>
-                <!-- <p>NxtNLP Research Institute, Chennai</p> -->
-              </div>
+        <div class="certification-slider">
+          <div class="certi-box">
+            <div class="certi-img">
+              <img src="Shanthi-Certifications/Shanthi_Master Trainer Certificate.jpg" alt="Certified Master Trainer">
+            </div>
+            <div class="certi-content">
+              <h5>Certified Master Trainer</h5>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="certi-box">
-              <div class="certi-img">
-                <img src="Shanthi-Certifications/POSH Certificate July'22-.Shanti_page-0001.jpg" alt="Sample Image">
-              </div>
-              <div class="certi-content">
-                <h5>Certified POSH Enabler</h5>
-                <!-- <p>Indian Academy of Training and Development (IATD) & Synergy
-                  School of Business Skills (SBS), Chennai
-                  </p> -->
-              </div>
+          <div class="certi-box">
+            <div class="certi-img">
+              <img src="Shanthi-Certifications/POSH Certificate July'22-.Shanti_page-0001.jpg" alt="Certified POSH Enabler">
+            </div>
+            <div class="certi-content">
+              <h5>Certified POSH Enabler</h5>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="certi-box">
-              <div class="certi-img">
-                <img src="Shanthi-Certifications/Shanthi_ACT certificate.jpg" alt="Sample Image">
-              </div>
-              <div class="certi-content">
-                <h5>Certifications in Psychotherapy</h5>
-                <!-- <p>NxtNLP Research Institute, Chennai</p> -->
-              </div>
+          <div class="certi-box">
+            <div class="certi-img">
+              <img src="Shanthi-Certifications/Shanthi_ACT certificate.jpg" alt="Certifications in Psychotherapy">
+            </div>
+            <div class="certi-content">
+              <h5>Certifications in Psychotherapy</h5>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="certi-box">
-              <div class="certi-img">
-                <img src="Shanthi-Certifications/Shanthi_CBT certificate.jpg" alt="Sample Image">
-              </div>
-              <div class="certi-content">
-                <h5>Certifications in Psychotherapy</h5>
-                <!-- <p>NxtNLP Research Institute, Chennai</p> -->
-              </div>
+          <div class="certi-box">
+            <div class="certi-img">
+              <img src="Shanthi-Certifications/Shanthi_CBT certificate.jpg" alt="Certifications in Psychotherapy">
+            </div>
+            <div class="certi-content">
+              <h5>Certifications in Psychotherapy</h5>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="certi-box">
-              <div class="certi-img">
-                <img src="Shanthi-Certifications/Shanthi_DBT certificate.jpg" alt="Sample Image">
-              </div>
-              <div class="certi-content">
-                <h5>Certifications in Psychotherapy</h5>
-                <!-- <p>NxtNLP Research Institute, Chennai</p> -->
-              </div>
+          <div class="certi-box">
+            <div class="certi-img">
+              <img src="Shanthi-Certifications/Shanthi_DBT certificate.jpg" alt="Certifications in Psychotherapy">
+            </div>
+            <div class="certi-content">
+              <h5>Certifications in Psychotherapy</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="Newsletter">
+      <div class="container mt-5">
+        <div class="newsletter_heading">
+          <h1 class="text-center m-5 mt-2"><b><span class="text-warning">N</span>ewsletter</b></h1>
+        </div>
+        <div class="row align-items-center">
+            
+            <div class="col-md-4">
+                <img src="img/CAB.png" alt="ChangeABit Newsletter" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-8">
+                <h2 class="mb-4 mt-1">Change<span class="text-warning">A</span>Bit: Transforming Minds, One Step At a Time</h2>
+                <p class="mb-3">
+                    Discover the keys to achieving success through behavioral transformation and brain optimization with my weekly newsletter, Changeabit. Driven by my passion for behavioral skills and personal growth, Changeabit offers insights and practical tips to help you make meaningful changes that lead to lasting success.
+                </p>
+                <p class="mb-3">
+                    Join our community and stay ahead with expert advice on mastering behaviors that can transform your personal and professional life.
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7190682466737680384" class="btn btn-warning">
+                        Subscribe to Our Newsletter
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
     
     <section id="Testimonials" name="Testimonials">
       <div class="container testimonial-section">
-        <h1 class="text-center mb-4"><span class="text-warning">T</span>esti<span class="text-warning">m</span>onials</h1>
+        <h1 class="text-center mb-4"><span class="text-warning">T</span>estimonials</h1>
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -458,9 +459,43 @@
     </footer>
     
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.certification-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+</script>
 </body>
 </html>
