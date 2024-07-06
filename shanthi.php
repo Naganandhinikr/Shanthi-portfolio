@@ -1,4 +1,5 @@
 <?php
+require 'shanthi_mail';
 if (isset($_POST['sub'])){
 $servername = "localhost";
 $dbname = "Shaanthi_form";

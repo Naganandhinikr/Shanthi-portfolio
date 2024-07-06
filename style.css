@@ -10,7 +10,8 @@ html{
 }
 
 .hero {
-    background: url(img/ssbaner.png) no-repeat center center/cover;
+    padding-top: 100px;
+    /* background: url(img/bnrf.png) no-repeat center center/cover; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -355,20 +356,22 @@ html{
     background-color: #181130c4;
     padding: 8px;
     margin-bottom: 8px;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
+    min-height: 390px;
+    /* max-height: 450px; */
 }
 
-.WH-box:hover {
+/* .WH-box:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     background-color: #242525;
-}
+} */
 
 .WH-box h4 {
     /* font-size: 1.5rem; */
@@ -377,32 +380,48 @@ html{
     /* margin-bottom: 15px; */
 }
 
-.WH-box:hover h4{
+/* .WH-box:hover h4{
     color: #ffca2c;
-}
+} */
 
 .WH-box p {
     /* font-size: 1rem; */
     color: white;
     text-align: justify;
     line-height: 1.6;
-    opacity: 0;
+    /* opacity: 1; */
     transition: opacity 0.3s ease-in-out;
     margin: 5px 14px;
 }
 
 .help-description{
     color: #6c757d;
-    max-height: 0;
-    overflow: hidden;
+    /* max-height: 0;
+    overflow: hidden; */
     transition: max-height 0.3s ease;
 }
 
+.WH-box li{
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px ;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.1s ease, box-shadow 0.1s ease;
+}
 
-.WH-box:hover .help-description {
+.WH-box li:hover{
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    color: #000;
+    background-color: #fff;
+}
+
+/* .WH-box:hover .help-description {
     max-height: 400px;
     opacity: 1;
-}
+} */
 
 .WH-box:hover{
     border-radius: 20px;
